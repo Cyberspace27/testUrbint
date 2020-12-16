@@ -26,14 +26,10 @@ public class ActionsTest extends BaseTest{
 	
   public void clickOnSettingsOption() {
 	  
-		waitTime(9000);
-		actionsPage.clickOnViewSettings();
-		waitTime(8000);
-		actionsPage.selectFilterName("Ticket Type");
-		waitTime(5000);
 		
+		actionsPage.clickOnViewSettings();
+		actionsPage.selectFilterName("Ticket Type");
 		actionsPage.optionFilterByName("Standard");
-		waitTime(7000);
 		actionsPage.goToNextPage();
 		System.out.println("RESULTADO");
 		

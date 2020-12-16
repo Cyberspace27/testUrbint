@@ -58,9 +58,8 @@ public void typeUserPassword(String user, String pass) {
 */
 
 public ActionsPage login() {
-	//clickElementByLocator(By.xpath("//div[@class='MuiGrid-root MuiGrid-item']//button[contains(@class,'MuiButtonBase-root')]"));
 	clickElement(getSignInButton());
-	
+	waitUntilTableLoad();
 	return new ActionsPage(driver);
 }
 

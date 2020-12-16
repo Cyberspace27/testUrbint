@@ -28,13 +28,6 @@ public WebElement getViewSettings() {
 }
 
 
-
-
-//public By selectTicketType = By.xpath("(//p[@data-testid='filter-selected-summary'])[1]");
-//public WebElement getTicketType() {
-//	return driver.findElement(selectTicketType);
-//}
-
 public By tablePagZise = By.cssSelector(".actions-table > tbody > tr");
 public List<WebElement> getTablePagZise() {
 	return driver.findElements(tablePagZise);
@@ -42,19 +35,16 @@ public List<WebElement> getTablePagZise() {
 
 public By btnNextPage = By.xpath("//button[@aria-label='Next Page']");
 public WebElement getNextPage(){
-	
 	return driver.findElement(btnNextPage);
 }
 
 public By tableResult = By.cssSelector(".actions-table");
 public WebElement getTableResult(){
-	
 	return driver.findElement(tableResult);
 }
 
 public By emptyTable = By.cssSelector(".empty-table");
 public WebElement getEmptyTable(){
-	
 	return driver.findElement(emptyTable);
 }
 
@@ -70,7 +60,7 @@ public boolean clickOnViewSettings() {
 	boolean elemenFound = false;
 	elemenFound = isElementPresent(getViewSettings());
 	clickElement(getViewSettings());
-	
+	 waitUntilTableLoad();
 	return elemenFound;
 }
 
@@ -90,57 +80,47 @@ clickElementByLocator(By.xpath("//div[contains(@class,'MuiAccordionSummary-root'
 * @author ariel vc
 */
 public void optionFilterByName(String filterName) {
-clickElementByLocator(By.xpath("//div[@data-testid='checkbox'  and contains(.,'"+filterName+"')]/label"));
-
+	clickElementByLocator(By.xpath("//div[@data-testid='checkbox'  and contains(.,'"+filterName+"')]/label"));
+	waitUntilTableLoad();
 }
 
 /**
-* Method to 
+* Method to get the table result count 
 * @author ariel vc
 */
 public int tablePagSize() {
- int tableCount = 0;
- 
- tableCount =	 getTablePagZise().size();
- System.out.println("AAAAAAAAAAA " + tableCount);
-	 
- 
-return tableCount;
+	 int tableCount = 0;
+	 tableCount =	 getTablePagZise().size();
+		
+	 return tableCount;
 }
 
 
 /**
-* Method to go to the next page if the table contains more results 
+* Method to go to the next page only if the table contains more results 
 * @author ariel vc
 */
-public int goToNextPage() {
- int tableCount = 0;
+public void goToNextPage() {
 
- if(nextPageExist) {
- 
- waitUntilTableLoad( );
- //isAttribtuePresent(getEmptyTable(), "");
- }
- else if(!isElementPresent( getTableResult()) && !isElementPresentXpath(By.xpath("//div[@class='empty-table']"))  ) {
-	 System.out.println("aloharrararararrarar");
-	 waitUtilElementLoad(getTableResult());
- }else if(tablePagSize()==1) {
-	 waitUntilTableLoad( );
+	 if(nextPageExist) {
+		 waitUntilTableLoad( );
+	 }
+	 else if(!isElementPresent( getTableResult()) && !isElementPresentXpath(By.xpath("//div[@class='empty-table']"))  ) {
+		 waitUtilElementLoad(getTableResult());
+	 }else if(tablePagSize()==1) {
+		 waitUntilTableLoad( );
+		 
+	 }
 	 
- }
- 
- 
- if(tablePagSize()==50) {
-	 System.out.println("sdsdsdsdsdddddddddd");
-	 waitUtilElementLoad(getTableResult());
-	 clickElement(getNextPage());	
-	 nextPageExist = true;
-		 goToNextPage();
-	
- }else
-	System.out.println("Current Page is the last Page " + tableCount);
-return tableCount;
-}
-
+	 if(tablePagSize()==50) {
+		 waitUtilElementLoad(getTableResult());
+		 clickElement(getNextPage());	
+		 nextPageExist = true;
+			 goToNextPage();
+		
+	 }else
+		System.out.println("Current Page is the last Page ");
+	 
+	}
 
 }

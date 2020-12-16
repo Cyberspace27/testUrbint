@@ -1,32 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-16T05:39:48 CST" name="Default suite" finished-at="2020-12-16T05:40:34 CST" duration-ms="46301">
+  <suite started-at="2020-12-16T10:37:19 CST" name="FullRegression" finished-at="2020-12-16T10:39:04 CST" duration-ms="105594">
     <groups>
       <group name="Actions">
-        <method signature="ActionsTest.clickOnSettingsOption()[pri:1, instance:tests.ActionsTest@4ec4f3a0]" name="clickOnSettingsOption" class="tests.ActionsTest"/>
+        <method signature="ActionsTest.clickOnSettingsOption()[pri:1, instance:tests.ActionsTest@50f6ac94]" name="clickOnSettingsOption" class="tests.ActionsTest"/>
       </group> <!-- Actions -->
+      <group name="login">
+        <method signature="LoginTest.signInFailed()[pri:1, instance:tests.LoginTest@e3b3b2f]" name="signInFailed" class="tests.LoginTest"/>
+        <method signature="LoginTest.signInSuccess()[pri:1, instance:tests.LoginTest@e3b3b2f]" name="signInSuccess" class="tests.LoginTest"/>
+      </group> <!-- login -->
     </groups>
-    <test started-at="2020-12-16T05:39:48 CST" name="Default test" finished-at="2020-12-16T05:40:34 CST" duration-ms="46301">
-      <class name="tests.ActionsTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.ActionsTest@4ec4f3a0]" started-at="2020-12-16T05:39:48 CST" name="beforeClass" finished-at="2020-12-16T05:39:58 CST" duration-ms="10522" status="PASS">
+    <test started-at="2020-12-16T10:37:19 CST" name="Test1" finished-at="2020-12-16T10:39:04 CST" duration-ms="105594">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@e3b3b2f]" started-at="2020-12-16T10:37:19 CST" name="beforeClass" finished-at="2020-12-16T10:37:30 CST" duration-ms="11674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeC()[pri:0, instance:tests.ActionsTest@4ec4f3a0]" started-at="2020-12-16T05:39:58 CST" name="beforeC" finished-at="2020-12-16T05:40:02 CST" duration-ms="4170" status="PASS">
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:tests.LoginTest@e3b3b2f]" started-at="2020-12-16T10:37:30 CST" name="beforeC" finished-at="2020-12-16T10:37:30 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeC -->
-        <test-method signature="clickOnSettingsOption()[pri:1, instance:tests.ActionsTest@4ec4f3a0]" started-at="2020-12-16T05:40:02 CST" name="clickOnSettingsOption" description="click on setting view button" finished-at="2020-12-16T05:40:33 CST" duration-ms="30792" status="PASS">
+        <test-method signature="signInFailed()[pri:1, instance:tests.LoginTest@e3b3b2f]" started-at="2020-12-16T10:37:30 CST" name="signInFailed" description="logIn with invalid data" finished-at="2020-12-16T10:37:51 CST" duration-ms="20430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInFailed -->
+        <test-method signature="signInSuccess()[pri:1, instance:tests.LoginTest@e3b3b2f]" started-at="2020-12-16T10:37:51 CST" name="signInSuccess" description="logIn with correct data" finished-at="2020-12-16T10:38:14 CST" duration-ms="23423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInSuccess -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.LoginTest@e3b3b2f]" started-at="2020-12-16T10:38:14 CST" name="afterClass" finished-at="2020-12-16T10:38:15 CST" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ActionsTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.ActionsTest@50f6ac94]" started-at="2020-12-16T10:38:15 CST" name="beforeClass" finished-at="2020-12-16T10:38:25 CST" duration-ms="9756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:tests.ActionsTest@50f6ac94]" started-at="2020-12-16T10:38:25 CST" name="beforeC" finished-at="2020-12-16T10:38:43 CST" duration-ms="17686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeC -->
+        <test-method signature="clickOnSettingsOption()[pri:1, instance:tests.ActionsTest@50f6ac94]" started-at="2020-12-16T10:38:43 CST" name="clickOnSettingsOption" description="click on setting view button" finished-at="2020-12-16T10:39:04 CST" duration-ms="21053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnSettingsOption -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.ActionsTest@4ec4f3a0]" started-at="2020-12-16T05:40:33 CST" name="afterClass" finished-at="2020-12-16T05:40:34 CST" duration-ms="772" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.ActionsTest@50f6ac94]" started-at="2020-12-16T10:39:04 CST" name="afterClass" finished-at="2020-12-16T10:39:04 CST" duration-ms="778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.ActionsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+  </suite> <!-- FullRegression -->
 </testng-results>
