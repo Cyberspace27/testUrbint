@@ -54,7 +54,6 @@ public class BasePage {
 	* @author ariel vc
 	*/
 	public void type(WebElement element, String inputText) {
-		element.clear();
 		waitUtilElementLoad(element);
 		element.sendKeys(inputText);
 

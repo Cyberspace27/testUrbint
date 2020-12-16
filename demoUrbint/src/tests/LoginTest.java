@@ -20,13 +20,6 @@ public class LoginTest extends BaseTest {
 		loginPage = new LoginPage(driver);
 		actionsPage = new ActionsPage(driver);
 	}
-	
-	@AfterTest
-	public void AfterTest()
-	{
-		loginPage.clearLoginElements();
-	}
-	
 
 
 	@Test(priority=1 ,description = "logIn with invalid data", groups = { "login" })
@@ -38,6 +31,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test(priority=2 ,description = "logIn with invalid email", groups = { "login" })
 	public void invalidEmail() {
+		loginPage.clearLoginElements();
 		loginPage.typeUserPassword("805409853---&&%%",  "puy7cind0VOOT_weep");
 		loginPage.login();
 		Assert.assertTrue(loginPage.isElementPresent(loginPage.getUserEmail()),"The SignIn was not performe as expected");
@@ -45,6 +39,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test(priority=3 ,description = "logIn with invalid password", groups = { "login" })
 	public void invalidUserPassword() {
+		loginPage.clearLoginElements();
 		loginPage.typeUserPassword("qe+candidate@urbint.com", "$%%805409853---&&%%");
 		loginPage.clickLoginButton();
 		Assert.assertTrue(loginPage.isElementPresent(loginPage.getUserEmail()),"The SignIn was not performe as expected");
@@ -63,7 +58,7 @@ public class LoginTest extends BaseTest {
 		waitTime(5000);
 		loginPage.typeUserPassword("qe+candidate@urbint.com", "puy7cind0VOOT_weep");
 		actionsPage = loginPage.login();
-		
+		waitTime(8000);
 		Assert.assertTrue(actionsPage.isElementPresent(actionsPage.getActionTitle()),"The SignIn was performe as expected");
 
 	}

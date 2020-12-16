@@ -1,175 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-16T12:14:23 CST" name="Default suite" finished-at="2020-12-16T12:16:26 CST" duration-ms="122494">
+  <suite started-at="2020-12-16T13:08:53 CST" name="FullRegression" finished-at="2020-12-16T13:11:18 CST" duration-ms="144398">
     <groups>
+      <group name="Actions">
+        <method signature="ActionsTest.clickOnSettingsOption()[pri:1, instance:tests.ActionsTest@7f2cfe3f]" name="clickOnSettingsOption" class="tests.ActionsTest"/>
+      </group> <!-- Actions -->
       <group name="login">
-        <method signature="LoginTest.checkForgotPasswordLink()[pri:4, instance:tests.LoginTest@1b7cc17c]" name="checkForgotPasswordLink" class="tests.LoginTest"/>
-        <method signature="LoginTest.invalidEmail()[pri:2, instance:tests.LoginTest@1b7cc17c]" name="invalidEmail" class="tests.LoginTest"/>
-        <method signature="LoginTest.invalidUserPassword()[pri:3, instance:tests.LoginTest@1b7cc17c]" name="invalidUserPassword" class="tests.LoginTest"/>
-        <method signature="LoginTest.signInFailed()[pri:1, instance:tests.LoginTest@1b7cc17c]" name="signInFailed" class="tests.LoginTest"/>
-        <method signature="LoginTest.signInSuccess()[pri:5, instance:tests.LoginTest@1b7cc17c]" name="signInSuccess" class="tests.LoginTest"/>
+        <method signature="LoginTest.checkForgotPasswordLink()[pri:4, instance:tests.LoginTest@28194a50]" name="checkForgotPasswordLink" class="tests.LoginTest"/>
+        <method signature="LoginTest.invalidEmail()[pri:2, instance:tests.LoginTest@28194a50]" name="invalidEmail" class="tests.LoginTest"/>
+        <method signature="LoginTest.invalidUserPassword()[pri:3, instance:tests.LoginTest@28194a50]" name="invalidUserPassword" class="tests.LoginTest"/>
+        <method signature="LoginTest.signInFailed()[pri:1, instance:tests.LoginTest@28194a50]" name="signInFailed" class="tests.LoginTest"/>
+        <method signature="LoginTest.signInSuccess()[pri:5, instance:tests.LoginTest@28194a50]" name="signInSuccess" class="tests.LoginTest"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2020-12-16T12:14:23 CST" name="Default test" finished-at="2020-12-16T12:16:26 CST" duration-ms="122494">
+    <test started-at="2020-12-16T13:08:53 CST" name="Test1" finished-at="2020-12-16T13:11:18 CST" duration-ms="144398">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:14:23 CST" name="beforeClass" finished-at="2020-12-16T12:14:53 CST" duration-ms="29560" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:08:53 CST" name="beforeClass" finished-at="2020-12-16T13:09:03 CST" duration-ms="9987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeC()[pri:0, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:14:53 CST" name="beforeC" finished-at="2020-12-16T12:14:53 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:09:03 CST" name="beforeC" finished-at="2020-12-16T13:09:03 CST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeC -->
-        <test-method signature="signInFailed()[pri:1, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:14:53 CST" name="signInFailed" description="logIn with invalid data" finished-at="2020-12-16T12:15:13 CST" duration-ms="20569" status="PASS">
+        <test-method signature="signInFailed()[pri:1, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:09:03 CST" name="signInFailed" description="logIn with invalid data" finished-at="2020-12-16T13:09:24 CST" duration-ms="20468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInFailed -->
-        <test-method signature="invalidEmail()[pri:2, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:15:13 CST" name="invalidEmail" description="logIn with invalid email" finished-at="2020-12-16T12:15:34 CST" duration-ms="20438" status="PASS">
+        <test-method signature="invalidEmail()[pri:2, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:09:24 CST" name="invalidEmail" description="logIn with invalid email" finished-at="2020-12-16T13:09:45 CST" duration-ms="21793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmail -->
-        <test-method signature="invalidUserPassword()[pri:3, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:15:34 CST" name="invalidUserPassword" description="logIn with invalid password" finished-at="2020-12-16T12:15:34 CST" duration-ms="516" status="PASS">
+        <test-method signature="invalidUserPassword()[pri:3, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:09:45 CST" name="invalidUserPassword" description="logIn with invalid password" finished-at="2020-12-16T13:09:47 CST" duration-ms="1906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUserPassword -->
-        <test-method signature="checkForgotPasswordLink()[pri:4, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:15:34 CST" name="checkForgotPasswordLink" description="Check forgot password link" finished-at="2020-12-16T12:15:34 CST" duration-ms="23" status="PASS">
+        <test-method signature="checkForgotPasswordLink()[pri:4, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:09:47 CST" name="checkForgotPasswordLink" description="Check forgot password link" finished-at="2020-12-16T13:09:47 CST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForgotPasswordLink -->
-        <test-method signature="signInSuccess()[pri:5, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:15:34 CST" name="signInSuccess" description="logIn with correct data" finished-at="2020-12-16T12:16:25 CST" duration-ms="50628" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@data-testid='default-view-header']"}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'VILLARREALA', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\AVILLA~1\AppData\Local\Temp\scoped_dir24884_77576258}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65087}, acceptInsecureCerts=false, browserVersion=87.0.4280.88, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 26e18a80bada54435af5be3c4c473c0c
-*** Element info: {Using=xpath, value=//h2[@data-testid='default-view-header']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@data-testid='default-view-header']"}
-  (Session info: chrome=87.0.4280.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'VILLARREALA', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}), userDataDir=C:\Users\AVILLA~1\AppData\Local\Temp\scoped_dir24884_77576258}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:65087}, acceptInsecureCerts=false, browserVersion=87.0.4280.88, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true, webauthn:virtualAuthenticators=true}]
-Session ID: 26e18a80bada54435af5be3c4c473c0c
-*** Element info: {Using=xpath, value=//h2[@data-testid='default-view-header']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-at pages.ActionsPage.getActionTitle(ActionsPage.java:28)
-at tests.LoginTest.signInSuccess(LoginTest.java:66)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="signInSuccess()[pri:5, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:09:47 CST" name="signInSuccess" description="logIn with correct data" finished-at="2020-12-16T13:10:24 CST" duration-ms="36449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInSuccess -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:16:25 CST" name="afterClass" finished-at="2020-12-16T12:16:26 CST" duration-ms="722" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.LoginTest@28194a50]" started-at="2020-12-16T13:10:24 CST" name="afterClass" finished-at="2020-12-16T13:10:25 CST" duration-ms="733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="AfterTest()[pri:0, instance:tests.LoginTest@1b7cc17c]" started-at="2020-12-16T12:16:26 CST" name="AfterTest" finished-at="2020-12-16T12:16:26 CST" duration-ms="1" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'VILLARREALA', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: RemoteWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'VILLARREALA', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-at pages.LoginPage.getUserEmail(LoginPage.java:16)
-at pages.LoginPage.clearLoginElements(LoginPage.java:98)
-at tests.LoginTest.AfterTest(LoginTest.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
-at org.testng.TestRunner.afterRun(TestRunner.java:847)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ActionsTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.ActionsTest@7f2cfe3f]" started-at="2020-12-16T13:10:25 CST" name="beforeClass" finished-at="2020-12-16T13:10:35 CST" duration-ms="9964" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AfterTest -->
-      </class> <!-- tests.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:tests.ActionsTest@7f2cfe3f]" started-at="2020-12-16T13:10:35 CST" name="beforeC" finished-at="2020-12-16T13:10:56 CST" duration-ms="21341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeC -->
+        <test-method signature="clickOnSettingsOption()[pri:1, instance:tests.ActionsTest@7f2cfe3f]" started-at="2020-12-16T13:10:56 CST" name="clickOnSettingsOption" description="Validate Action Filter" finished-at="2020-12-16T13:11:17 CST" duration-ms="20992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnSettingsOption -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.ActionsTest@7f2cfe3f]" started-at="2020-12-16T13:11:17 CST" name="afterClass" finished-at="2020-12-16T13:11:18 CST" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.ActionsTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- FullRegression -->
 </testng-results>

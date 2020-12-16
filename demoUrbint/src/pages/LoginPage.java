@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -95,8 +96,14 @@ public void clickLoginButton() {
 */
 
 public void clearLoginElements() {
-	getUserEmail().clear();
-	getPassword().clear();
+	
+	for (int i = 0 ; i < 25; i++) {
+		driver.findElement(By.id("email")).sendKeys(Keys.BACK_SPACE);
+	}
+	
+	for (int i = 0 ; i < 20; i++) {
+		driver.findElement(By.id("password")).sendKeys(Keys.BACK_SPACE);
+	}
 }
 
 }
