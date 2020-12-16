@@ -11,11 +11,17 @@ import generic.BasePage;
 
 public class ActionsPage extends BasePage { 
 	
+	
+	
+//	global variables 
+	boolean nextPageExist = false;
+	
+
 	public ActionsPage(WebDriver driver) {
 		super(driver);
 
 	}
-	 boolean nextPageExist = false;
+	 
 
 public By headerTitle = By.xpath("//h2[@data-testid='default-view-header']");
 public WebElement getActionTitle() {

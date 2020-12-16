@@ -54,6 +54,8 @@ public class BasePage {
 	* @author ariel vc
 	*/
 	public void type(WebElement element, String inputText) {
+		element.clear();
+		waitUtilElementLoad(element);
 		element.sendKeys(inputText);
 
 	}
@@ -102,13 +104,13 @@ public class BasePage {
 	
 	
 	/**
-	* Method to Wait until a element is load
+	* Method to Wait until a element load
 	* @author ariel vc
 	*/
-	public void waitUtilElementLoad(WebElement tableElement) {
+	public void waitUtilElementLoad(WebElement element) {
 		
-		WebDriverWait  wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(tableElement));
+		WebDriverWait  wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	/**

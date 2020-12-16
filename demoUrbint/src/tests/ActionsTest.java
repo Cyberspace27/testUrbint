@@ -22,16 +22,14 @@ public class ActionsTest extends BaseTest{
 	loginPage.login();
 	}
 	
-	@Test(priority=1 ,description = "click on setting view button", groups = { "Actions" })
+	@Test(priority=1 ,description = "Validate Action Filter", groups = { "Actions" })
 	
   public void clickOnSettingsOption() {
-	  
 		
 		actionsPage.clickOnViewSettings();
 		actionsPage.selectFilterName("Ticket Type");
 		actionsPage.optionFilterByName("Standard");
 		actionsPage.goToNextPage();
-		System.out.println("RESULTADO");
 		
   }
 }

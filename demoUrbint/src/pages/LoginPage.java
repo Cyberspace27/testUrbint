@@ -26,7 +26,7 @@ public WebElement getSignInButton() {
 	return driver.findElement(btnSignIn);
 }
 
-public By hrfForgotPassword = By.cssSelector("");
+public By hrfForgotPassword = By.xpath("//p[contains(@class,'MuiTypography-root') and contains(.,'Forgot Password')]");
 public WebElement getForgotPassword() {
 	return driver.findElement(hrfForgotPassword);
 }
@@ -64,17 +64,39 @@ public ActionsPage login() {
 }
 
 
-
 /**
-* Method that performs the action of go to signUp page
+* Method to check if forgotPassword link is present
 *
 * @author ariel vc
 */
 
-public void forgotPassword() {
-	clickElement(getForgotPassword());
-
+public boolean forgotPassword() {
+	boolean response = false ; 
+	response = isElementPresent(getForgotPassword());
+	return response;
 }
 
+/**
+* Method to performs the login action
+*
+* @return ActionsPage ;
+* @author ariel vc
+*/
+
+public void clickLoginButton() {
+	clickElement(getSignInButton());
+}
+
+/**
+* Method to performs the login action
+*
+* @return ActionsPage ;
+* @author ariel vc
+*/
+
+public void clearLoginElements() {
+	getUserEmail().clear();
+	getPassword().clear();
+}
 
 }
